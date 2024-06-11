@@ -1,0 +1,45 @@
+1. proto: Transaction protocol
+2. state: Indicates to the state and its dependent protocol.
+3. dur: Record total duration
+4. sbytes: Source to destination transaction bytes 
+5. dbytes: Destination to source transaction bytes
+6. sttl: Source to destination time to live value 
+7. dttl: Destination to source time to live value
+8. sloss: Source packets retransmitted or dropped 
+9. dloss: Destination packets retransmitted or dropped
+10. service: http.  ftp.  smtp.  ssh.  dns.  ftp-data . irc  and (-) if not much used service
+11. Sload: Source bits per second
+12. Dload: Destination bits per second
+13. Spkts: Source to destination packet count 
+14. Dpkts: Destination to source packet count
+15. swin: Source TCP window advertisement value
+16. dwin: Destination TCP window advertisement value
+17. stcpb: Source TCP base sequence number
+18. dtcpb: Destination TCP base sequence number
+19. smeansz: Mean of the ?ow packet size transmitted by the src 
+20. dmeansz: Mean of the ?ow packet size transmitted by the dst 
+21. trans_depth: Represents the pipelined depth into the connection of http request/response transaction
+22. res_bdy_len: Actual uncompressed content size of the data transferred from the server�s http service.
+23. Sjit: Source jitter (mSec)
+24. Djit: Destination jitter (mSec)
+25. Stime. Timestamp. record start time
+26. Ltime. Timestamp. record last time
+27. Sintpkt: Source interpacket arrival time (mSec)
+28. Dintpkt: Destination interpacket arrival time (mSec)
+29. tcprtt: TCP connection setup round-trip time.  the sum of �synack� and �ackdat�.
+30. synack: TCP connection setup time.  the time between the SYN and the SYN_ACK packets.
+31. ackdat: TCP connection setup time.  the time between the SYN_ACK and the ACK packets.
+32. is_sm_ips_ports. Binary. If source (1) and destination (3)IP addresses equal and port numbers (2)(4)  equal then.  this variable takes value 1 else 0
+33. ct_state_ttl: No. for each state (6) according to specific range of values for source/destination time to live (10) (11).
+34. ct_flw_http_mthd: No. of flows that has methods such as Get and Post in http service.
+35. is_ftp_login. Binary. If the ftp session is accessed by user and password then 1 else 0. 
+36. ct_ftp_cmd: No of flows that has a command in ftp session.
+37. ct_srv_src: No. of connections that contain the same service (14) and source address (1) in 100 connections according to the last time (26).
+38. ct_srv_dst: No. of connections that contain the same service (14) and destination address (3) in 100 connections according to the last time (26).
+39. ct_dst_ltm: No. of connections of the same destination address (3) in 100 connections according to the last time (26).
+40. ct_src_ ltm: No. of connections of the same source address (1) in 100 connections according to the last time (26).
+41. ct_src_dport_ltm: No of connections of the same source address (1) and the destination port (4) in 100 connections according to the last time (26).
+42. ct_dst_sport_ltm: No of connections of the same destination address (3) and the source port (2) in 100 connections according to the last time (26).
+43. ct_dst_src_ltm: No of connections of the same source (1) and the destination (3) address in in 100 connections according to the last time (26).
+44. attack_cat: The name of each attack category. In this data set .  nine categories e.g. Fuzzers.  Analysis.  Backdoors.  DoS Exploits.  Generic.  Reconnaissance.  Shellcode and Worms
+45. Label: binary. 0 for normal and 1 for attack records
