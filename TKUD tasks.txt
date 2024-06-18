@@ -1,0 +1,15 @@
+slide: gioi thieu qua ve dataset, liet ke mot vai feature (them ca dang du lieu)
+
+protocol vs service khac nhau nhu the nao
+
+tim hieu ki model va mot so function(train_test_split)
+
+slide:
+    - bia (mon hoc), thanh vien
+    - gioi thieu chung
+    - gioi thieu dataset (UNSW), 1 so features, dtype cua features
+    - xu ly du lieu: ordinal_encoder, one_hot_encoder, standard scaler
+    - hyperparameters tuning: GridSearchCV
+    - training model: moi model 1 slide vs qua trinh chon hyperparamters(params_dict -> best_params)
+    - bang ket qua: accuracy, precision, recall, f1
+    - model: KNN, GB, LR, RF, DT
